@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_home">
+
+    <fragment
+        android:id="@+id/nav_home"
+        android:name="com.example.albinutav1.ui.acasa.HomeFragment"
+        android:label="@string/menu_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/nav_gallery"
+        android:name="com.example.albinutav1.ui.stupine.StupinaFragment"
+        android:label="@string/menu_gallery"
+        tools:layout="@layout/fragment_stupina">
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_stup"
+            app:destination="@id/nav_stup" />
+        <action
+            android:id="@+id/action_nav_gallery_to_nav_id"
+            app:destination="@id/nav_edit" />
+        <action
+            android:id="@+id/action_nav_gallery_to_maps_tupina"
+            app:destination="@id/splite_stupina" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_slideshow"
+        android:name="com.example.albinutav1.ui.tratamente.TratamenteFragment"
+        android:label="@string/menu_slideshow"
+        tools:layout="@layout/fragment_tratamente" />
+
+    <fragment
+        android:id="@+id/nav_tools"
+        android:name="com.example.albinutav1.ui.hranire.HranireFragment"
+        android:label="@string/menu_tools"
+        tools:layout="@layout/fragment_hranire" >
+        <action
+            android:id="@+id/action_nav_tools_to_nav_addHranire"
+            app:destination="@id/nav_addHranire" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_share"
+        android:name="com.example.albinutav1.ui.harta_stupine.ShareFragment"
+        android:label="@string/menu_share"
+        tools:layout="@layout/fragment_share" />
+
+    <fragment
+        android:id="@+id/nav_send"
+        android:name="com.example.albinutav1.ui.backup.SendFragment"
+        android:label="@string/menu_send"
+        tools:layout="@layout/fragment_send" />
+
+    <fragment
+        android:id="@+id/nav_stup"
+        android:name="com.example.albinutav1.ui.stup.StupFragment"
+        android:label="Stupi"
+        tools:layout="@layout/fragment_stup" />
+
+    <fragment
+        android:id="@+id/nav_edit"
+        android:name="com.example.albinutav1.ui.stupine.Edit"
+        android:label="Edit"
+        tools:layout="@layout/fragment_edit_stupina" />
+
+    <fragment
+        android:id="@+id/nav_add"
+        android:name="com.example.albinutav1.ui.stupine.AddStupina"
+        android:label="Adaugă stupină"
+        tools:layout="@layout/fragment_addstupina">
+        <action
+            android:id="@+id/action_nav_add_to_nav_gallery"
+            app:destination="@id/nav_gallery" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_addstup"
+        android:name="com.example.albinutav1.ui.stup.AddStup"
+        android:label="Adaugă stup"
+        tools:layout="@layout/fragment_addstup">
+        <action
+            android:id="@+id/action_nav_addstup_to_nav_stup"
+            app:destination="@id/nav_stup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_moreinfoStup"
+        android:name="com.example.albinutav1.ui.stup.MoreInfoStup"
+        android:label="Imformații stup"
+        tools:layout="@layout/fragment_detalii_stup">
+        <action
+            android:id="@+id/action_nav_moreinfoStup_to_nav_stup"
+            app:destination="@id/nav_stup" />
+    </fragment>
+    <fragment
+        android:id="@+id/nav_editStup"
+        android:name="com.example.albinutav1.ui.stup.EditStup"
+        android:label="Editează-ți stupul"
+        tools:layout="@layout/fragment_edit_stup">
+        <action
+            android:id="@+id/action_nav_editStup_to_nav_stup2"
+            app:destination="@id/nav_stup" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_addTratament"
+        android:name="com.example.albinutav1.ui.tratamente.AddTratament"
+        android:label="Adaugă un tratament"
+        tools:layout="@layout/fragment_addtratament">
+        <action
+            android:id="@+id/action_nav_addTratament_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_moreInfoTratamente"
+        android:label="Informații tratamente"
+        android:name="com.example.albinutav1.ui.tratamente.MoreAboutTratamente"
+        tools:layout="@layout/fragment_detallii_tratamente">
+
+        <action
+            android:id="@+id/action_nav_moreInfoTratamente_to_nav_slideshow"
+            app:destination="@id/nav_slideshow" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_addHranire"
+        android:label="Adaugă o hrănire"
+        android:name="com.example.albinutav1.ui.hranire.AddHranire"
+        tools:layout="@layout/fragment_addhranire">
+        <action
+            android:id="@+id/action_nav_addHranire_to_nav_showMoreHranire"
+            app:destination="@id/nav_showMoreHranire" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_showMoreHranire"
+        android:label="Detalii hrănire"
+        android:name="com.example.albinutav1.ui.hranire.MoreAboutHranire"
+        tools:layout="@layout/fragment_detalii_hranire"/>
+
+    <fragment
+        android:id="@+id/nav_control"
+        android:name="com.example.albinutav1.ui.control.ControlFragment"
+        android:label="Control veterinar"
+        tools:layout="@layout/fragment_control">
+        <action
+            android:id="@+id/action_nav_control_to_nav_addcontrol"
+            app:destination="@id/nav_addcontrol" />
+        <action
+            android:id="@+id/action_nav_control_to_nav_infocontrol"
+            app:destination="@id/nav_infocontrol" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/nav_addcontrol"
+        android:name="com.example.albinutav1.ui.control.AddControl"
+        android:label="Adaugă un control"
+        tools:layout="@layout/fragment_addcontrol"/>
+
+    <fragment
+        android:id="@+id/nav_infocontrol"
+        android:name="com.example.albinutav1.ui.control.MoreAboutControl"
+        android:label="Detalii control"
+        tools:layout="@layout/fragment_detalii_control"/>
+
+    <fragment
+        android:id="@+id/nav_wether"
+        android:name="com.example.albinutav1.ui.weather.WheatherFragment"
+        android:label="Detalii control"
+        tools:layout="@layout/fragment_weather"/>
+    <fragment
+        android:label="Profil"
+        android:id="@+id/user_detail"
+        android:name="com.example.albinutav1.ui.user.FragmentUser"
+        tools:layout="@layout/fragment_user"/>
+    <fragment
+        android:label="Funcția Split"
+        android:id="@+id/splite_stupina"
+        android:name="com.example.albinutav1.ui.stupine.Splite"
+        tools:layout="@layout/fragment_splite"/>
+</navigation>

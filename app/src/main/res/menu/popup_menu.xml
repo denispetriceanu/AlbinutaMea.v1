@@ -1,0 +1,23 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/one"
+        android:icon="@drawable/icon_btnmore"
+        android:title="Mai mult" />
+
+    <item
+        android:id="@+id/three"
+        android:icon="@drawable/icon_btnedit"
+        android:title="Editare" />
+
+    <item
+        android:id="@+id/four"
+        android:icon="@drawable/ic_impartit_24dp"
+        android:title="Splite" />
+
+    <item
+        android:id="@+id/two"
+        android:icon="@drawable/icon_btndelete"
+        android:title="Stergere" />
+
+</menu>

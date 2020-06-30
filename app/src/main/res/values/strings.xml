@@ -1,3 +1,19 @@
 <resources>
-    <string name="app_name">AlbinutaTaV1</string>
+    <string name="app_name">Albinuta v.1</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Albinuța</string>
+    <string name="nav_header_subtitle">denispetriceanu@gmail.com</string>
+    <string name="nav_header_desc">Titlul de navigare</string>
+    <string name="action_settings">Setări</string>
+
+    <string name="menu_home">Pagina principală</string>
+    <string name="menu_gallery">Stupine</string>
+    <string name="menu_slideshow">Tratamente</string>
+    <string name="menu_tools">Hrănire</string>
+    <string name="menu_share">Hartă stupine</string>
+    <string name="menu_send">Backup</string>
+    <string name="text_addFrag">Completați următoarele câmpuri pentru a adăuga o stupină!</string>
+    <string name="ip" id="ip">http://192.168.1.83:5000</string>
+
 </resources>
